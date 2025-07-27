@@ -1,1 +1,27 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viral Clip Generator</title>
+    <style>
+        body { font-family: sans-serif; background-color: #f0f2f5; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .container { background: white; padding: 40px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center; }
+        h1 { color: #1c1e21; }
+        input[type="url"] { width: 400px; padding: 10px; margin-top: 20px; border: 1px solid #dddfe2; border-radius: 6px; }
+        button { background-color: #1877f2; color: white; border: none; padding: 12px 20px; border-radius: 6px; font-size: 16px; cursor: pointer; margin-top: 20px; }
+        button:hover { background-color: #166fe5; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Viral Clip Generator</h1>
+        <p>Paste a YouTube podcast link below to create 10 short clips.</p>
+        <!-- This form will be updated later with your n8n webhook URL -->
+        <form action="PASTE_YOUR_N8N_WEBHOOK_URL_HERE" method="post">
+            <input type="url" id="youtube_url" name="youtube_url" placeholder="https://www.youtube.com/watch?v=..." required>
+            <br>
+            <button type="submit">Generate My Clips!</button>
+        </form>
+    </div>
+</body>
+</html>
